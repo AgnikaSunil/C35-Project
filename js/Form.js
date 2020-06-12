@@ -146,7 +146,7 @@ class Form{
 		this.four.position(967,550);
 		this.five.position(1108,550);
 
-		this.submit.position(1060,840);
+		this.submit.position(1000,840);
 		this.submit.size(100,40);
 		this.submit.style('background-color',"#CCFFFF");
 
