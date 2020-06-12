@@ -3,7 +3,7 @@ var database;
 var form;
 var Person;
 function setup(){
-canvas = createCanvas(displayWidth - 500,displayHeight);
+canvas = createCanvas(950,900);
 
 database = firebase.database();
 

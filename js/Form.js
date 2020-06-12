@@ -88,71 +88,71 @@ class Form{
 		this.five = createElement('h3',"5");
 	}
 	display(){
-		this.name.position(displayWidth/4.2-10,displayHeight/6.2-2);
+		this.name.position(334,145);
 		this.name.size(200,15);
-		this.email.position(displayWidth/4.2-10,displayHeight/5.2+0.1);
+		this.email.position(334,173);
 		this.email.size(200,15);
-		this.nameText.position(displayWidth/2-450,displayHeight/6.2-24);
-		this.emailText.position(displayWidth/2-450,displayHeight/6+4);
-		this.text1.position(displayWidth/2-462,displayHeight/10-5);
+		this.nameText.position(270,122);
+		this.emailText.position(270,152);
+		this.text1.position(264,80);
 
-		this.firstQ.position(displayWidth/2-450,displayHeight/4.6);
-		this.radio1.position(displayWidth/2-455,displayHeight/3.6);
-		this.radio2.position(displayWidth/2-455,displayHeight/3.2);
-		this.radio3.position(displayWidth/2-455,displayHeight/2.87);
-		this.radio4.position(displayWidth/2-455,displayHeight/2.6);
+		this.firstQ.position(270,190);
+		this.radio1.position(265,250);
+		this.radio2.position(265,280);
+		this.radio3.position(265,310);
+		this.radio4.position(265,340);
 
-		this.secondQ.position(displayWidth/2-450,displayHeight/2.5);
-		this.sub1.position(displayWidth/2-450,displayHeight/2.25);
-		this.number.position(displayWidth/2-230,displayHeight/2.14);
-		this.sub2.position(displayWidth/2-450,displayHeight/2.1);
-		this.number2.position(displayWidth/2-230,displayHeight/2.0);
+		this.secondQ.position(270,360);
+		this.sub1.position(270,400);
+		this.number.position(490,420);
+		this.sub2.position(270,430);
+		this.number2.position(490,450);
 
-		this.thirdQ.position(displayWidth/2-450,displayHeight/1.915);		
-		this.thirdQB.position(displayWidth/2-450,displayHeight/1.8);	
-		this.public.position(displayWidth/2-450,displayHeight/1.55);
-		this.radio5.position(displayWidth/2-190,displayHeight/1.5);
+		this.thirdQ.position(270,470);		
+		this.thirdQB.position(270,500);	
+		this.public.position(270,580);
+		this.radio5.position(530,600);
 		this.radio5.style('width','600px');
 		this.radio5.style('color',"white");
 
-		this.government.position(displayWidth/2-450,displayHeight/1.45);
-		this.radio6.position(displayWidth/2-190,displayHeight/1.405);
+		this.government.position(270,620);
+		this.radio6.position(530,640);
 		this.radio6.style('width','600px');
 		this.radio6.style('color',"white");
 
-		this.industry.position(displayWidth/2-450,displayHeight/1.36);
-		this.radio7.position(displayWidth/2-190,displayHeight/1.32);
+		this.industry.position(270,660);
+		this.radio7.position(530,680);
 		this.radio7.style('width','600px');
 		this.radio7.style('color',"white");
 
-		this.nature.position(displayWidth/2-450,displayHeight/1.28);
-		this.radio8.position(displayWidth/2-190,displayHeight/1.245);
+		this.nature.position(270,700);
+		this.radio8.position(530,720);
 		this.radio8.style('width','600px');
 		this.radio8.style('color',"white");
 
-		this.fifthQ.position(displayWidth/2-450,displayHeight/1.215);
-		this.radio9.position(displayWidth/2-455,displayHeight/1.129);
+		this.fifthQ.position(270,740);
+		this.radio9.position(270,800);
 		this.radio9.style('width','50px');
 
-		this.title.position(displayWidth/2-120,displayHeight/10-115);
+		this.title.position(570,-20);
 
-		this.info.position(displayWidth/6+30,displayHeight/2+375);
-		this.info2.position(displayWidth/6+30,displayHeight/10-60);
-		this.info3.position(displayWidth/6+30,displayHeight/10-40);
+		this.info.position(270,830);
+		this.info2.position(270,25);
+		this.info3.position(270,45);
 
-		this.one.position(displayWidth/2-185,displayHeight/2+100);
-		this.two.position(displayWidth/2-40,displayHeight/2+100);
-		this.three.position(displayWidth/2+107,displayHeight/2+100);
-		this.four.position(displayWidth/2+245,displayHeight/2+100);
-		this.five.position(displayWidth/2+387,displayHeight/2+100);
+		this.one.position(536,550);
+		this.two.position(680,550);
+		this.three.position(826,550);
+		this.four.position(967,550);
+		this.five.position(1108,550);
 
-		this.submit.position(displayWidth/2+360,displayHeight/2+400);
+		this.submit.position(1090,840);
 		this.submit.size(100,40);
 		this.submit.style('background-color',"#CCFFFF");
 
 		this.submit.mousePressed(()=>{
 			this.thanks = createElement('h2',"Thank you for taking the time to complete this survey.");
-			this.thanks.position(displayWidth/6+200,displayHeight/2+397);
+			this.thanks.position(450,855);
 			this.thanks.style('color',"#0000FF");
 	
 			Person.name = this.name.value();
