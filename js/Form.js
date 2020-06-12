@@ -86,6 +86,8 @@ class Form{
 		this.three = createElement('h3',"3");
 		this.four = createElement('h3',"4");
 		this.five = createElement('h3',"5");
+
+		this.reset = createButton('Reset');
 	}
 	display(){
 		this.name.position(334,145);
@@ -134,7 +136,7 @@ class Form{
 		this.radio9.position(270,800);
 		this.radio9.style('width','50px');
 
-		this.title.position(570,-20);
+		this.title.position(560,-20);
 
 		this.info.position(270,830);
 		this.info2.position(270,25);
@@ -150,10 +152,12 @@ class Form{
 		this.submit.size(100,40);
 		this.submit.style('background-color',"#CCFFFF");
 
+		this.reset.position(890,840);
+		this.reset.size(100,40);
+		this.reset.style('background-color',"#CCFFFF");
+
 		this.submit.mousePressed(()=>{
-			this.thanks = createElement('h2',"Thank you for taking the time to complete this survey.");
-			this.thanks.position(450,855);
-			this.thanks.style('color',"#0000FF");
+			
 	
 			Person.name = this.name.value();
 			Person.email = this.email.value();
@@ -172,8 +176,149 @@ class Form{
 			Person.index = personCount;
 			Person.update();
 			Person.updateCount(personCount);
+
+			this.name.hide();
+			this.email.hide();
+			this.nameText.hide();
+			this.emailText.hide();
+			this.radio1.hide();
+			this.radio2.hide();
+			this.radio3.hide();
+			this.radio4.hide();
+			this.radio5.hide();
+			this.radio6.hide();
+			this.radio7.hide();
+			this.radio8.hide();
+			this.radio9.hide();
+
+			this.number.hide();
+			this.number2.hide();
+
+			this.text1.hide();
+			this.firstQ.hide();
+			this.secondQ.hide();
+			this.sub1.hide();
+			this.sub2.hide();
+			this.thirdQ.hide();
+			this.thirdQB.hide();
+			this.public.hide();
+			this.government.hide();
+			this.industry.hide();
+			this.nature.hide();
+			this.fifthQ.hide();
+			this.info.hide();
+			this.info2.hide();
+			this.info3.hide();
+			this.submit.hide();
+			this.one.hide();
+			this.two.hide();
+			this.three.hide();
+			this.four.hide();
+			this.five.hide();
+			this.reset.hide();
+
+			this.thanks = createElement('h1',"Thank you for taking the time to complete this survey.");
+			this.thanks.position(350,400);
+			this.thanks.style('color',"#0000FF");
 		})
 
-		
+		this.reset.mousePressed(()=>{
+			this.name.value('');
+			this.email.value('');
+
+			this.radio1.remove();
+			this.radio2.remove();
+			this.radio3.remove();
+			this.radio4.remove();
+			this.radio5.remove();
+			this.radio6.remove();
+			this.radio7.remove();
+			this.radio8.remove();
+			this.radio9.remove();
+
+			this.number.remove();
+			this.number2.remove();
+
+			this.radio1 = createRadio();
+			this.radio1.option('A lot');
+			this.radio2 = createRadio();
+			this.radio2.option('A fair amount');
+			this.radio3 = createRadio();
+			this.radio3.option('Not very much');
+			this.radio4 = createRadio();
+			this.radio4.option('None at all');
+			this.radio1.position(265,250);
+			this.radio2.position(265,280);
+			this.radio3.position(265,310);
+			this.radio4.position(265,340);
+
+			this.number = createSelect();
+			this.number.option('1');
+			this.number.option('2');
+			this.number.option('3');
+			this.number.option('4');
+			this.number.option('5');
+			this.number.option('more than 5');
+			this.number2 = createSelect();
+			this.number2.option('1');
+			this.number2.option('2');
+			this.number2.option('3');
+			this.number2.option('4');
+			this.number2.option('5');
+			this.number2.option('more than 5');
+			this.number.position(490,420);
+			this.number2.position(490,450);
+
+			this.radio5 = createRadio();
+			this.radio5.option('||||||||||||||||||||||||||||||||||||1');
+			this.radio5.option('||||||||||||||||||||||||||||||||||||2');
+			this.radio5.option('|||||||||||||||||||||||||||||||||||3');
+			this.radio5.option('|||||||||||||||||||||||||||||||||||4');
+			this.radio5.option('||||||||||||||||||||||||||||||||||||5');
+
+			this.radio6 = createRadio();
+			this.radio6.option('||||||||||||||||||||||||||||||||||||1');
+			this.radio6.option('||||||||||||||||||||||||||||||||||||2');
+			this.radio6.option('|||||||||||||||||||||||||||||||||||3');
+			this.radio6.option('|||||||||||||||||||||||||||||||||||4');
+			this.radio6.option('||||||||||||||||||||||||||||||||||||5');
+
+			this.radio7 = createRadio();
+			this.radio7.option('||||||||||||||||||||||||||||||||||||1');
+			this.radio7.option('||||||||||||||||||||||||||||||||||||2');
+			this.radio7.option('|||||||||||||||||||||||||||||||||||3');
+			this.radio7.option('|||||||||||||||||||||||||||||||||||4');
+			this.radio7.option('||||||||||||||||||||||||||||||||||||5');
+
+			this.radio8 = createRadio();
+			this.radio8.option('||||||||||||||||||||||||||||||||||||1');
+			this.radio8.option('||||||||||||||||||||||||||||||||||||2');
+			this.radio8.option('|||||||||||||||||||||||||||||||||||3');
+			this.radio8.option('|||||||||||||||||||||||||||||||||||4');
+			this.radio8.option('||||||||||||||||||||||||||||||||||||5');
+
+			this.radio9 = createRadio();
+			this.radio9.option('Yes');
+			this.radio9.option('No');
+
+			this.radio5.position(530,600);
+			this.radio5.style('width','600px');
+			this.radio5.style('color',"white");
+
+			this.radio6.position(530,640);
+			this.radio6.style('width','600px');
+			this.radio6.style('color',"white");
+
+			this.radio7.position(530,680);
+			this.radio7.style('width','600px');
+			this.radio7.style('color',"white");
+
+			this.radio8.position(530,720);
+			this.radio8.style('width','600px');
+			this.radio8.style('color',"white");
+
+			this.radio9.position(270,800);
+			this.radio9.style('width','50px');
+		});
 	}
 }

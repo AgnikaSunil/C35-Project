@@ -1,4 +1,5 @@
 var canvas;
+var personCount;
 var database;
 var form;
 var Person;

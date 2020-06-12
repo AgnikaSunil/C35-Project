@@ -48,7 +48,7 @@ class PersonData{
 		});
 	}
 
-	reset(){
+	/*reset(){
 		this.index = null;
 		this.name = null;
 		this.email = null;
@@ -63,5 +63,5 @@ class PersonData{
 		this.radio9 = null;
 		this.number = null;
 		this.number2 = null;
-	}
+	}*/
 }
