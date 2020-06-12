@@ -115,22 +115,22 @@ class Form{
 		this.public.position(270,580);
 		this.radio5.position(530,600);
 		this.radio5.style('width','600px');
-		this.radio5.style('color',"white");
+		this.radio5.style('color',"#CFFDEC");
 
 		this.government.position(270,620);
 		this.radio6.position(530,640);
 		this.radio6.style('width','600px');
-		this.radio6.style('color',"white");
+		this.radio6.style('color',"#CFFDEC");
 
 		this.industry.position(270,660);
 		this.radio7.position(530,680);
 		this.radio7.style('width','600px');
-		this.radio7.style('color',"white");
+		this.radio7.style('color',"#CFFDEC");
 
 		this.nature.position(270,700);
 		this.radio8.position(530,720);
 		this.radio8.style('width','600px');
-		this.radio8.style('color',"white");
+		this.radio8.style('color',"#CFFDEC");
 
 		this.fifthQ.position(270,740);
 		this.radio9.position(270,800);
@@ -150,11 +150,11 @@ class Form{
 
 		this.submit.position(1000,840);
 		this.submit.size(100,40);
-		this.submit.style('background-color',"#CCFFFF");
+		this.submit.style('background-color',"#CCCCFF");
 
 		this.reset.position(890,840);
 		this.reset.size(100,40);
-		this.reset.style('background-color',"#CCFFFF");
+		this.reset.style('background-color',"#CCCCFF");
 
 		this.submit.mousePressed(()=>{
 			
@@ -303,19 +303,19 @@ class Form{
 
 			this.radio5.position(530,600);
 			this.radio5.style('width','600px');
-			this.radio5.style('color',"white");
+			this.radio5.style('color',"#CFFDEC");
 
 			this.radio6.position(530,640);
 			this.radio6.style('width','600px');
-			this.radio6.style('color',"white");
+			this.radio6.style('color',"#CFFDEC");
 
 			this.radio7.position(530,680);
 			this.radio7.style('width','600px');
-			this.radio7.style('color',"white");
+			this.radio7.style('color',"#CFFDEC");
 
 			this.radio8.position(530,720);
 			this.radio8.style('width','600px');
-			this.radio8.style('color',"white");
+			this.radio8.style('color',"#CFFDEC");
 
 			this.radio9.position(270,800);
 			this.radio9.style('width','50px');

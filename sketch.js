@@ -15,6 +15,6 @@ Person = new PersonData();
 Person.getCount();
 }
 function draw(){
-background("white");
+background("#CFFDEC");
 
 }
